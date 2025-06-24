@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminación de Cuenta - Andes Birds</title>
+    <!-- Incluyendo Tailwind CSS para un diseño limpio y moderno -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Usando la fuente Inter de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Aplicando la fuente Inter al cuerpo del documento */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Un gris muy claro de fondo */
+        }
+        /* Estilos para que los "paneles" de la app se vean más realistas */
+        .app-panel {
+            border: 1px solid #d1d5db;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        .step-number {
+            background-color: #1f2937; /* Color principal de tu marca */
+            color: white;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto max-w-4xl p-4 sm:p-8">
+
+        <!-- Encabezado de la página -->
+        <header class="text-center mb-10">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-900">Andes Birds</h1>
+            <p class="text-lg text-gray-600 mt-2">Guía para la Eliminación Permanente de tu Cuenta</p>
+        </header>
+
+        <!-- Introducción -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-12">
+            <p class="text-base leading-relaxed">
+                Entendemos que necesites eliminar tu cuenta. Esta guía te mostrará cómo hacerlo directamente desde nuestra aplicación. Por favor, sigue los pasos cuidadosamente. Ten en cuenta que <strong>esta acción es permanente e irreversible</strong>. Una vez eliminada, tu cuenta, progreso, y todos los datos asociados no podrán ser recuperados.
+            </p>
+        </div>
+
+        <!-- Sección de Pasos -->
+        <div class="space-y-12">
+
+            <!-- Paso 1: Iniciar Sesión -->
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-2xl font-bold mb-3 flex items-center gap-3">
+                        <span class="step-number w-8 h-8 rounded-full flex items-center justify-center font-bold text-lg">1</span>
+                        Inicia Sesión en tu Cuenta
+                    </h2>
+                    <p class="text-gray-700">
+                        Primero, abre el juego y pasa por el menú. Debes presionar el botón de "iniciar Sesión" e iniciar sesión con el correo y la contraseña de la cuenta que deseas eliminar.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img src="https://placehold.co/600x400/1f2937/ffffff?text=Panel+de+Login" alt="Imagen del panel de inicio de sesión" class="rounded-lg app-panel w-full">
+                </div>
+            </div>
+
+            <!-- Paso 2: Ir a Ajustes de Cuenta -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-2xl font-bold mb-3 flex items-center gap-3">
+                         <span class="step-number w-8 h-8 rounded-full flex items-center justify-center font-bold text-lg">2</span>
+                        Busca la Opción de Eliminar
+                    </h2>
+                    <p class="text-gray-700">
+                        Dentro del panel de Inicio de Sesión, busca un botón y presiona el botón que te lleva al panel de <strong>Eliminación de Cuenta</strong>.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/2">
+                     <img src="https://placehold.co/600x400/e0e0e0/333333?text=Botón+de+Ajustes" alt="Botón para ir al panel de eliminación de cuenta" class="rounded-lg app-panel w-full">
+                </div>
+            </div>
+
+            <!-- Paso 3: Confirmar la Eliminación -->
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-2xl font-bold mb-3 flex items-center gap-3">
+                         <span class="step-number w-8 h-8 rounded-full flex items-center justify-center font-bold text-lg">3</span>
+                        Confirma con tu Contraseña
+                    </h2>
+                    <p class="text-gray-700">
+                        Por seguridad, para confirmar que eres el dueño legítimo de la cuenta, deberás <strong>ingresar tu contraseña actual</strong> en el campo de texto. Luego, presiona el botón final de <strong>"Eliminar Cuenta Permanentemente"</strong>.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img src="https://placehold.co/600x400/fee2e2/b91c1c?text=Panel+de+Eliminación" alt="Panel final para eliminar la cuenta" class="rounded-lg app-panel w-full">
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Advertencia Final -->
+        <div class="mt-16 bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded-lg" role="alert">
+            <p class="font-bold">Acción Irreversible</p>
+            <p>Una vez que presiones el botón final, tu cuenta se eliminará de inmediato y de forma permanente. Si cambias de opinión, no podremos ayudarte a recuperarla. Asegúrate de que realmente deseas continuar antes de confirmar.</p>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center mt-16 text-gray-500 text-sm">
+            <p>&copy; 2024 Andes Birds. Todos los derechos reservados.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
